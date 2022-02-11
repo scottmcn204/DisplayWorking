@@ -10,6 +10,21 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+.header{
+    background: blue;
+    position: relative;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1;
+}
+
+
+/* Menu */
 .menuBtn {
     position: relative;
     display: flex;
