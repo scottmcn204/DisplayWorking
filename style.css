@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #384851;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.menuBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 3px solid white;
+}
+.burgerMenuBtn {
+    width: 50px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.burgerMenuBtn::before,
+.burgerMenuBtn::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.burgerMenuBtn::before{
+    transform: translateY(-16px);
+}
+.burgerMenuBtn::after{
+    transform: translateY(16px);
+}
+/* Animation */
+.menuBtn.open .burgerMenuBtn{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+
+}
+<script src="tabulatedFetch.js"></script>
