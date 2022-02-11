@@ -6,8 +6,6 @@
 body {
     background: #384851;
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
 }
 
@@ -30,14 +28,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 1.5rem;
+    height: 1.5rem;
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
 .burgerMenuBtn {
-    width: 50px;
-    height: 6px;
+    width: 1.5rem;
+    height: 0.1rem;
     background: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -47,18 +45,18 @@ body {
 .burgerMenuBtn::after {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 6px;
+    width: 1.5rem;
+    height: 0.1rem;
     background: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out;
 }
 .burgerMenuBtn::before{
-    transform: translateY(-16px);
+    transform: translateY(-0.5rem);
 }
 .burgerMenuBtn::after{
-    transform: translateY(16px);
+    transform: translateY(0.5rem);
 }
 /* Animation */
 .menuBtn.open .burgerMenuBtn{
