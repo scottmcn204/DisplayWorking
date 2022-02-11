@@ -19,7 +19,6 @@ body {
     height: 80px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    border: 3px solid white;
 }
 .burgerMenuBtn {
     width: 50px;
