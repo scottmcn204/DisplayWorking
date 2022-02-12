@@ -8,8 +8,17 @@ body {
     display: flex;
     min-height: 100vh;
 }
-
-.header{
+nav ul{
+    list-style: none;
+    padding: 3rem;
+    background-color: aquamarine;
+}
+nav li{
+    float:left;
+    display: inline;
+    padding: .5rem;
+}
+/*.header{
     background: blue;
     position: relative;
     max-width: 80vw;
@@ -19,7 +28,7 @@ body {
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 1;
-}
+} */
 
 
 /* Menu */
