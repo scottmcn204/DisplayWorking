@@ -1,36 +1,25 @@
+:root{
+    --primary: aquamarine;
+    --dark: #384851;
+    --light: #FFFF
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
 }
 body {
-    background: #384851;
+    background: var(--dark);
     display: flex;
     min-height: 100vh;
 }
-nav ul{
-    list-style: none;
-    padding: 3rem;
-    background-color: aquamarine;
-}
-nav li{
-    float:left;
-    display: inline;
-    padding: .5rem;
-}
-/*.header{
-    background: blue;
-    position: relative;
-    max-width: 80vw;
-    margin: auto;
+.container{
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
-    z-index: 1;
-} */
-
-
+}
 /* Menu */
 .menuBtn {
     position: relative;
