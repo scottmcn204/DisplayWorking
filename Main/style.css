@@ -20,6 +20,31 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.topbar{
+    position: fixed;
+    background-color: var(--primary);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 16px 36px;
+    box-shadow: 0 2px 5px black;
+}
+.topbar a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 2px 5px black;
+    font-size: 24px;
+}
+.sidebar{
+    display: none;
+    top:50px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 120px;
+
+}
 /* Menu */
 .menuBtn {
     position: relative;
@@ -36,7 +61,7 @@ body {
     height: 0.1rem;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    box-shadow: 0 2px 5px black;
     transition: all .5s ease-in-out;
 }
 .burgerMenuBtn::before,
@@ -47,7 +72,7 @@ body {
     height: 0.1rem;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    box-shadow: 0 2px 5px black;
     transition: all .5s ease-in-out;
 }
 .burgerMenuBtn::before{
