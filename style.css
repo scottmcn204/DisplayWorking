@@ -1,0 +1,100 @@
+:root{
+    --primary: aquamarine;
+    --dark: #384851;
+    --light: #FFFF
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+body {
+    background: var(--dark);
+    display: flex;
+    min-height: 100vh;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar{
+    position: fixed;
+    background-color: var(--primary);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 16px 36px;
+    box-shadow: 0 2px 5px black;
+}
+.topbar a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 2px 5px black;
+    font-size: 24px;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.sidebar{
+    width: 200px;
+    height: 100%;
+    background: white;
+    padding: 30px 0;
+    position: fixed;
+    box-shadow: 0 2px 5px black;
+
+}
+/* Menu */
+.menuBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.burgerMenuBtn {
+    width: 1.5rem;
+    height: 0.1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+    transition: all .5s ease-in-out;
+}
+.burgerMenuBtn::before,
+.burgerMenuBtn::after {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 0.1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+    transition: all .5s ease-in-out;
+}
+.burgerMenuBtn::before{
+    transform: translateY(-0.5rem);
+}
+.burgerMenuBtn::after{
+    transform: translateY(0.5rem);
+}
+/* Animation */
+.menuBtn.open .burgerMenuBtn{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+
+}
+.menuBtn.open .burgerMenuBtn::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menuBtn.open .burgerMenuBtn::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
