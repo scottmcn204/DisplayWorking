@@ -1,14 +1,13 @@
 const menuBtn = document.querySelector('.menuBtn')
-const sidebar = document.querySelector('.sidebar')
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open');
-        //document.getElementById('sidebar').style.display = "flex";
         menuOpen = true;
+        document.querySelector('.sidebar').classList.add('open')
     } else {
         menuBtn.classList.remove('open');
-        //document.getElementById('sidebar').style.display = "none";
         menuOpen = false;
+        document.querySelector('.sidebar').classList.remove('open')
     }
 });

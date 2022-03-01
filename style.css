@@ -1,13 +1,14 @@
 :root{
-    --primary: aquamarine;
+    --primary: #4ABDAC;
+    --secondary: #FC4A1A;
     --dark: #384851;
-    --light: #FFFF
+    --light: #DFDCE3;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fira sans', sans-serif;
+    font-family: 'Roboto', sans-serif
 }
 body {
     background: var(--dark);
@@ -32,29 +33,47 @@ body {
 }
 .topbar a{
     text-decoration: none;
-    color: white;
-    text-shadow: 0 2px 5px black;
+    color: var(--light);
     font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
 .wrapper{
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 .sidebar{
     width: 200px;
     height: 100%;
-    background: white;
+    background: var(--light);
     padding: 30px 0;
     position: fixed;
     box-shadow: 0 2px 5px black;
     top: 50px;
     text-align: center;
-
+    transition: all 1s ease-in-out;
+    left: -200px;
+}
+.sidebar.open{
+    transform: translateX(200px)
+}
+.sidebar ul li{
+    padding: 22px 16px;
 }
 .sidebar ul li a{
     text-decoration: none;
     color: var(--primary);
-
+    font-size: 20px;
+    padding: 22px 42px;
+}
+.sidebar ul li :hover{
+    color: var(--light);
+    background-color: var(--secondary);
+    border-radius: 20px
+}
+.login{
+    bottom: 50px;
 }
 /* Menu */
 .menuBtn {
@@ -62,29 +81,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
 .burgerMenuBtn {
-    width: 1.5rem;
-    height: 0.1rem;
-    background: white;
+    width: 2rem;
+    height: 0.2rem;
+    background: var(--light);
     border-radius: 5px;
-    box-shadow: 0 2px 5px black;
-    transition: all .5s ease-in-out;
+
+    transition: all 1s ease-in-out;
 }
 .burgerMenuBtn::before,
 .burgerMenuBtn::after {
     content: '';
     position: absolute;
-    width: 1.5rem;
-    height: 0.1rem;
-    background: white;
+    width: 2rem;
+    height: 0.2rem;
+    background: var(--light);
     border-radius: 5px;
-    box-shadow: 0 2px 5px black;
-    transition: all .5s ease-in-out;
+   
+    transition: all 1s ease-in-out;
 }
 .burgerMenuBtn::before{
     transform: translateY(-0.5rem);
