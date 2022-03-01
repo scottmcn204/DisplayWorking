@@ -47,6 +47,13 @@ body {
     padding: 30px 0;
     position: fixed;
     box-shadow: 0 2px 5px black;
+    top: 50px;
+    text-align: center;
+
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: var(--primary);
 
 }
 /* Menu */
