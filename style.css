@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    position: relative;
 }
 .topbar{
     position: fixed;
@@ -36,6 +36,8 @@ body {
     color: var(--light);
     font-size: 24px;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 .wrapper{
     display: flex;
@@ -67,12 +69,25 @@ body {
     padding: 22px 42px;
 }
 .sidebar ul li :hover{
-    color: var(--light);
-    background-color: var(--secondary);
-    border-radius: 20px
+    color: var(--secondary);
 }
-.login{
-    bottom: 50px;
+a.login{
+    text-decoration: none;
+    position: relative;
+    top: 450px;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+.product{
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    color: var(--light);
+
 }
 /* Menu */
 .menuBtn {
