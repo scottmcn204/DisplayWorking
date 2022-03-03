@@ -11,3 +11,7 @@ menuBtn.addEventListener('click', () => {
         document.querySelector('.sidebar').classList.remove('open')
     }
 });
+
+submit = document.querySelector('.')
+aname = document.querySelector('.name')
+apassword = document.querySelector('.password')
