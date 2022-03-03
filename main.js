@@ -12,6 +12,17 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
-submit = document.querySelector('.')
-aname = document.querySelector('.name')
-apassword = document.querySelector('.password')
+const loginForm = document.querySelector('login-form')
+const loginButton = document.querySelector('login-form-submit')
+loginButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+    if(username === 'admin' && password === 'admin'){
+        alert("You have logged in!");
+        window.location.replace('Data.html');
+    }
+    else{
+        alert("Incorrect Password");
+    }
+});
