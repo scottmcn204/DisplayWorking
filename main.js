@@ -20,7 +20,7 @@ loginButton.addEventListener('click', (e) => {
     const password = loginForm.password.value;
     if(username === 'admin' && password === 'admin'){
         alert("You have logged in!");
-        window.location.replace('Data.html');
+        window.open('Data.html');
     }
     else{
         alert("Incorrect Password");
