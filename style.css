@@ -75,34 +75,36 @@ body {
 a.login{
     text-decoration: none;
     position: relative;
-    top: 35vw;
+    top: 80px;
     background-color: var(--primary);
     color: var(--light);
     padding: 20px 30px;
     border-radius: 15px;
 }
 .product{
-    display: flex;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     top: 100px;
+    text-align: center;
     color: var(--light);
+}
+.product h1{
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px black;;
+}
+.product li{
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    background-color: var(--primary);
+    padding-top: 70px;
+    width: 400px;
+    color: var(--dark);
 
-}
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    width: 100vw;
-    height:auto;
-    padding-top: 40px;
-    color: var(--light);
-}
-footer.content{
-    
 }
 .signin{
     display: flex;
