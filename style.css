@@ -55,6 +55,7 @@ body {
     text-align: center;
     transition: all 1s ease-in-out;
     left: -200px;
+    z-index: 98;
 }
 .sidebar.open{
     transform: translateX(200px)
@@ -94,17 +95,26 @@ a.login{
     background-color: var(--primary);
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0 2px 5px black;;
+    box-shadow: 0 2px 5px black;
 }
 .product li{
     margin-left: auto;
     margin-right: auto;
     list-style: none;
     background-color: var(--primary);
-    padding-top: 70px;
     width: 400px;
     color: var(--dark);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px black;
 
+
+}
+.product img{
+    padding-bottom: 20px;
+}
+.product p{
+    font-weight: bold;
 }
 .signin{
     display: flex;
