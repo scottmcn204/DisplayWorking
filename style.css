@@ -82,6 +82,22 @@ a.login{
     padding: 20px 30px;
     border-radius: 15px;
 }
+.dim{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    z-index: 97;
+    transition: opacity 1s ease-in-out;
+}
+.dim.open{
+    transition: opacity 1s ease-in-out;
+    box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, .3);
+    z-index: 97;
+    opacity: 0.2;
+}
 .product{
     position: relative;
     margin-left: auto;
@@ -89,6 +105,7 @@ a.login{
     top: 100px;
     text-align: center;
     color: var(--light);
+    z-index: 96;
 }
 .product h1{
     color: var(--secondary);
