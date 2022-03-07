@@ -118,14 +118,13 @@ a.login{
     margin-left: auto;
     margin-right: auto;
     list-style: none;
-    background-color: var(--primary);
-    width: 400px;
+    display: block;
+    background-color: var(--secondary);
+    width: 80%;
     color: var(--dark);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 2px 5px black;
-
-
 }
 .product img{
     padding-bottom: 20px;
@@ -156,6 +155,43 @@ a.login{
 .signin form label .submit{
     background-color: var(--secondary);
 }
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px black;
+}
+table h1{
+    font-weight: bold;
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 20px;
+}
+.about{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    text-align: center;
+    color: var(--light);
+}
+.about h2{
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 15px;
+}
+.about p{
+    background-color: var(--secondary);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+}
+
 /* Menu */
 .menuBtn {
     position: relative;
