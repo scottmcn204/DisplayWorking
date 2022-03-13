@@ -102,24 +102,42 @@ a.login{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 100px;
+    top: 60px;
     text-align: center;
     color: var(--light);
     z-index: 96;
 }
+.titleCard{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("icons/Device.webp");
+    background-position: center center;
+    height: 625px;
+    text-align: left;
+}
+.titleCard p{
+    position: relative;
+    top: 200px;
+    padding: 10px;
+    padding-left: 40px;
+}
+.titleCard h2{
+    position: relative;
+    top: 160px;
+    padding-left: 20px;
+}
 .product h1{
     color: var(--secondary);
-    background-color: var(--primary);
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px black;
+    position: relative;
+    top: 150px;
+    font-weight: bolder;
+    padding: 10px
 }
+
 .product li{
     margin-left: auto;
     margin-right: auto;
     list-style: none;
     display: block;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     width: 80%;
     color: var(--dark);
     padding: 30px;
@@ -173,12 +191,16 @@ table h1{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 100px;
-    text-align: center;
+    top:40px;
+    text-align: left;
     color: var(--light);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('icons/building.jpg');
+    height: 700px;
+    background-size: cover;
 }
-.about h2{
-    background-color: var(--primary);
+.about h1{
+    position: relative;
+    top: 130px;
     padding: 15px;
     border-radius: 15px;
 }
@@ -187,6 +209,8 @@ table h1{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.8;
+    top: 180px;
     padding: 20px;
     border-radius: 15px;
     width: 400px;
