@@ -151,21 +151,29 @@ a.login{
     font-weight: bold;
 }
 .signin{
-    display: flex;
-    position: absolute;
-    left: 35vw;
+    position: relative;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
-    top: 300px;
+    top: 200px;
+}
+.signin form{
     background-color: var(--primary);
     padding: 30px;
     border-radius: 20px;
-}
-.signin form{
+    opacity: 0.8;
     color: var(--secondary);
     position: relative;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
+}
+.signin h1{
+    color: var(--secondary);
+}
+.signin input{
+    font-size: 20px;
+    color: var(--secondary);
+    font-weight: bold;
 }
 .signin form label{
     color: var(--light);
@@ -174,18 +182,23 @@ a.login{
     background-color: var(--secondary);
 }
 table{
+    position: relative;
+    top: 200px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--secondary);
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 2px 5px black;
+    color: var(--light);
 }
-table h1{
-    font-weight: bold;
-    background-color: var(--primary);
-    padding: 15px;
-    border-radius: 20px;
+.data{
+    text-align: center;
+}
+.data h1{
+    position: relative;
+    top: 150px;
+    color: var(--light);
 }
 .about{
     position: relative;
@@ -196,6 +209,7 @@ table h1{
     color: var(--light);
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('icons/building.jpg');
     height: 700px;
+    background-position: center center;
     background-size: cover;
 }
 .about h1{
