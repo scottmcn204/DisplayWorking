@@ -110,7 +110,7 @@ a.login{
 .titleCard{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("icons/Device.webp");
     background-position: center center;
-    height: 625px;
+    height: 640px;
     text-align: left;
 }
 .titleCard p{
@@ -162,13 +162,12 @@ a.login{
     padding: 30px;
     border-radius: 20px;
     opacity: 0.8;
-    color: var(--secondary);
     position: relative;
     text-align: center;
     font-size: 25px;
 }
 .signin h1{
-    color: var(--secondary);
+    color: var(--light);
 }
 .signin input{
     font-size: 20px;
@@ -178,8 +177,12 @@ a.login{
 .signin form label{
     color: var(--light);
 }
-.signin form label .submit{
+#login-form-submit{
+    border: none;
     background-color: var(--secondary);
+    color: var(--light);
+    padding: 20px 30px;
+    border-radius: 15px;
 }
 table{
     position: relative;
@@ -207,27 +210,32 @@ table{
     top:40px;
     text-align: left;
     color: var(--light);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('icons/building.jpg');
-    height: 700px;
+    background: linear-gradient(rgba(0,0,0,0.5 ), rgba(0,0,0,0.5)), url('icons/building.jpg');
+    height: 100%;
     background-position: center center;
     background-size: cover;
 }
 .about h1{
     position: relative;
-    top: 130px;
+    top: 150px;
     padding: 15px;
     border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .about p{
-    background-color: var(--secondary);
+    background-color: var(--primary);
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.8;
     top: 180px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     width: 400px;
+    text-align: center;
+    color: var(--dark);
+    font-weight: bold;
 }
 .productCard{
     position: relative;
@@ -241,7 +249,6 @@ table{
     background-position: top;
     border-radius: 20px;
 }
-
 .productCard h1{
     color: var(--light);
     position: relative;
