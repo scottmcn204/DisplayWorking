@@ -1,9 +1,12 @@
+/*Colour Variables*/
 :root{
     --primary: #4ABDAC;
     --secondary: #FC4A1A;
     --dark: #384851;
     --light: #DFDCE3;
 }
+
+/*Page Layout*/
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +18,8 @@ body {
     display: flex;
     min-height: 100vh;
 }
+
+/*Top Menu Bar*/
 .container{
     margin: 0 auto;
     display: flex;
@@ -39,6 +44,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*Side Menu Bar*/
 .wrapper{
     display: flex;
     position: relative;
@@ -98,6 +105,8 @@ a.login{
     z-index: 97;
     opacity: 0.2;
 }
+
+/*Home Page*/
 .product{
     position: relative;
     margin-left: auto;
@@ -131,7 +140,6 @@ a.login{
     font-weight: bolder;
     padding: 10px
 }
-
 .product li{
     margin-left: auto;
     margin-right: auto;
@@ -150,6 +158,8 @@ a.login{
 .product p{
     font-weight: bold;
 }
+
+/*LogIn Page*/
 .signin{
     position: relative;
     width: 80%;
@@ -184,6 +194,8 @@ a.login{
     padding: 20px 30px;
     border-radius: 15px;
 }
+
+/*User Data Page*/
 table{
     position: relative;
     top: 200px;
@@ -203,6 +215,8 @@ table{
     top: 150px;
     color: var(--light);
 }
+
+/*About Page*/
 .about{
     position: relative;
     margin-left: auto;
@@ -237,6 +251,8 @@ table{
     color: var(--dark);
     font-weight: bold;
 }
+
+/*Product Page*/
 .productCard{
     position: relative;
     margin-left: auto;
@@ -269,7 +285,8 @@ table{
     top: 280px;
     box-shadow: 0 2px 5px black;
 }
-/* Menu */
+
+/* Burger Menu */
 .menuBtn {
     position: relative;
     display: flex;
@@ -303,7 +320,7 @@ table{
 .burgerMenuBtn::after{
     transform: translateY(0.5rem);
 }
-/* Animation */
+/* Animation for Menu */
 .menuBtn.open .burgerMenuBtn{
     transform: translateX(-50px);
     background: transparent;
